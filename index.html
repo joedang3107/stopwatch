@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="over1" onmouseover="over1('red')" onmouseout="out1('orange')" onclick="start()">
+        Start</button>
+    <button id="over2" onmouseover="over2('red')" onmouseout="out2('orange')" onclick="stop()">
+        Stop</button>
+    <button id="over3" onmouseover="over3('red')" onmouseout="out3('orange')" onclick="reset()">
+        Reset</button>
+    <button id="over4" onmouseover="over4('red')" onmouseout="out4('orange')" onclick="loop()">
+        Lap</button>
+    <br>
+    <label for="">Time run:</label>
+    <form action="">
+        <input type="text" name="display" value="00:00:00" class="js-time-runner" ></input>
+    </form>
+    
+    <ol class ='lapped-time'></ol>
+    <script src="./index.js"></script>
+</body>
+
+</html>
